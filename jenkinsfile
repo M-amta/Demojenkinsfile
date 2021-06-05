@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Buildjob') {
+            steps {
+                echo 'Buildjob Executed'
+            }
+        }
+        stage('Deployjob') {
+            steps {
+                echo 'Deployjob Executed'
+            }
+        }
+        stage('Testjob') {
+            steps {
+                echo 'Testjob Executed'
+            }
+        }
+        stage('Releasejob') {
+            steps {
+                echo 'Releasejob Executed'
+            }
+        }
+    }
+}
